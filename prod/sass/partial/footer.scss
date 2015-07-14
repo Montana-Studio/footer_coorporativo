@@ -28,44 +28,6 @@
 				@include gridle_state(phoness-min) {
 					font-size: 8px;
 					padding: 0px 10px;
-				}  
-				.tooltip {
-					font:{size: 15px;weight:lighter;}
-					padding: 2px 0;
-					display: inline;
-					position: relative;
-					color:$third_color;
-					@include gridle_state(phoness-min) {
-						font:{size: 11px;}
-					}	
-					&:hover {
-						&:after {
-							@extend .text-left;
-							bottom: 26px;
-							content: attr(title);
-							right: -55%;
-							position: absolute;
-							z-index: 98;
-							background: $third_color; 
-							color: $second_color; 
-							font:{size: 12px;}
-							padding: 5px 15px;
-							width: 290px; 
-							@include gridle_state(phoness-min) {
-								width: 250px;
-								left: -220px;
-							}
-						}
-						&:before {
-							bottom: 20px;
-							content: "";
-							position: absolute;
-							z-index: 99;
-							border: solid;
-							border-color: $third_color transparent;
-							border-width: 6px 6px 0 6px;
-						}
-  					}
 				}
 			}
 		}
@@ -183,6 +145,8 @@
 	.third-box {
 		@extend .box-footer;
 		height: 90px;
+		position:relative;
+		overflow: hidden;
 		.logotipos-sitios {
 			@include gridle(7, desktopess notebook-min);
 			@include gridle(12, tabless-min);
@@ -196,7 +160,7 @@
 				display: table;
 				@include gridle(3);
 				@extend .no-paddings;
-				height: inherit;
+				height: 100%;
 				.sitios {
 					padding:{left:15px;}
 					display: table-cell;
@@ -210,42 +174,21 @@
 					}
 				}
 				.logo-group {
-					@include gridle(6);
-					@include gridle_float(none);
 					@extend .no-paddings;
 					height: 100%;
-					margin: 0 auto;
-					display: table-cell;
-					vertical-align: middle;
 					&.chicfit {
-						@include gridle(7);
+						@include gridle(3);
 						@include gridle(11, phoness-min);
-						@include gridle_float(none);
 						margin: 0 auto;
-						display: block;
-						float: none;
 						svg {
 							height: auto;
 						}
 					}
 					&.soycrack {
-						@include gridle(8);
-						@include gridle(11, phoness-min);
-						@include gridle_float(none);
-						margin: 0 auto;
-						display: block;
-						float: none;
-						svg {
-							height: auto;
-						}
+						@extend .chicfit;
 					}
 					&.chilerunning {
-						@include gridle(4);
-						@include gridle(7, phoness-min);
-						@include gridle_float(none);
-						margin: 0 auto;
-						display: block;
-						float: none;
+						@extend .chicfit;
 					}	
 				}
 			}	
@@ -273,6 +216,11 @@
 				@include gridle(3);
 				@extend .no-paddings;
 				height: inherit;
+				a{
+					display: block;
+					width:100%;
+					height: 90%;
+				}
 				.logotipe-mdg {
 					height: 140px;
 					display: table-cell;
@@ -322,7 +270,7 @@
 			display: block;
 			height: 65px;
 			.powered-content {
-				@include gridle(6);
+				@include gridle(7);
 				height: inherit;
 				display: table;
 				.powered {
@@ -331,10 +279,48 @@
 					color:$third_color;
 					font:{size:9px;}
 					text:{align:right;}
+					.tooltip {
+						font:{size: 15px;weight:lighter;}
+						padding: 2px 0;
+						display: inline;
+						position: relative;
+						color:$third_color;
+						@include gridle_state(phoness-min) {
+							font:{size: 11px;}
+						}	
+						&:hover {
+							&:after {
+								@extend .text-left;
+								bottom: 26px;
+								content: attr(title);
+								right: -55%;
+								position: absolute;
+								z-index: 98;
+								background: $third_color; 
+								color: $second_color; 
+								font:{size: 12px;}
+								padding: 5px 15px;
+								width: 290px; 
+								@include gridle_state(phoness-min) {
+									width: 250px;
+									left: -220px;
+								}
+							}
+							&:before {
+								bottom: 20px;
+								content: "";
+								position: absolute;
+								z-index: 99;
+								border: solid;
+								border-color: $third_color transparent;
+								border-width: 6px 6px 0 6px;
+							}
+	  					}
+					}
 				}	
 			}
 			.content-logo {
-				@include gridle(6);
+				@include gridle(5);
 				@extend .no-paddings;
 				height: inherit;
 				display: table;

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('footer.json'),
 
-        www: 'app',
+        www: 'app/',
         dist: 'prod',
         
         jsout:'js/footer.min.js',
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
 
         watch: {
           configFiles:{
-            files:['<%= dist %>/<%= scss %>','<%= dist %>/<%= js %>','<%= www %>/**/*.php'],
+            files:['<%= dist %>/<%= scss %>','<%= dist %>/<%= js %>','<%= www %>/**/*.html'],
             options:{
               livereload: true,
             },
