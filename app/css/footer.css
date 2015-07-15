@@ -5,13 +5,13 @@
   clear: both;
   border-spacing: 0; }
 
-.parent:before, .parent:after {
+.parent:before, .footer-content .third-box .logotipos-sitios .content-logo:before, .footer-content .fourth-box .content-groupmd .content-logo:before, .parent:after, .footer-content .third-box .logotipos-sitios .content-logo:after, .footer-content .fourth-box .content-groupmd .content-logo:after {
   content: "";
   display: table;
   border-spacing: 0; }
-.parent:after {
+.parent:after, .footer-content .third-box .logotipos-sitios .content-logo:after, .footer-content .fourth-box .content-groupmd .content-logo:after {
   clear: both; }
-.parent {
+.parent, .footer-content .third-box .logotipos-sitios .content-logo, .footer-content .fourth-box .content-groupmd .content-logo {
   zoom: 1; }
 
 .push-0, .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .pull-0, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12 {
@@ -22,12 +22,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.parent {
+.parent, .footer-content .third-box .logotipos-sitios .content-logo, .footer-content .fourth-box .content-groupmd .content-logo {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .box-footer, .footer-content .first-box, .footer-content .second-box, .footer-content .third-box, .footer-content .fourth-box, .footer-content .fifth-box, .footer-content, .footer-content .second-box .logotipe-mediatrends, .footer-content .second-box .contact-info, .footer-content .third-box .logotipos-sitios, .footer-content .third-box .logotipos-sitios .content-logo, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chicfit, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.soycrack, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chilerunning, .footer-content .fourth-box .content-groupmd, .footer-content .fourth-box .content-groupmd .content-logo, .footer-content .fourth-box .content-groupmd .content-logo .logo-group, .footer-content .fourth-box .content-groupmd .content-logo .logo-group.montana, .footer-content .fifth-box .content-final, .footer-content .fifth-box .content-final .powered-content, .footer-content .fifth-box .content-final .content-logo {
+.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .box-footer, .footer-content .first-box, .footer-content .second-box, .footer-content .third-box, .footer-content .fourth-box, .footer-content .fifth-box, .footer-content, .footer-content .second-box .logotipe-mediatrends, .footer-content .second-box .contact-info, .footer-content .third-box .logotipos-sitios, .footer-content .third-box .logotipos-sitios .content-logo, .footer-content .fourth-box .content-groupmd, .footer-content .fourth-box .content-groupmd .content-logo, .footer-content .fifth-box .content-final, .footer-content .fifth-box .content-final .powered-content, .footer-content .fifth-box .content-final .content-logo {
   display: inline-block;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -494,7 +494,7 @@ html {
     height: 100%;
     width: 100%; }
 
-.text-center, .footer-content .first-box .site-name {
+.text-center, .footer-content .first-box .site-name, .footer-content .third-box .logotipos-sitios .content-logo a {
   text-align: center; }
 
 .text-left, .footer-content .fifth-box .content-final .powered-content .powered .tooltip:hover:after {
@@ -506,7 +506,7 @@ html {
 .no-margins, html body, .footer-content .first-box .site-name .site-description, .footer-content .second-box .contact-info .content-info ul {
   margin: 0 !important; }
 
-.no-paddings, .box-footer, .footer-content .first-box, .footer-content .second-box, .footer-content .third-box, .footer-content .fourth-box, .footer-content .fifth-box, .footer-content, .footer-content .second-box .contact-info .content-info ul, .footer-content .third-box .logotipos-sitios .content-logo, .footer-content .third-box .logotipos-sitios .content-logo .logo-group, .footer-content .fourth-box .content-groupmd, .footer-content .fourth-box .content-groupmd .content-logo, .footer-content .fourth-box .content-groupmd .content-logo .logo-group, .footer-content .fifth-box .content-final, .footer-content .fifth-box .content-final .content-logo {
+.no-paddings, .box-footer, .footer-content .first-box, .footer-content .second-box, .footer-content .third-box, .footer-content .fourth-box, .footer-content .fifth-box, .footer-content, .footer-content .second-box .contact-info .content-info ul, .footer-content .fourth-box .content-groupmd, .footer-content .fifth-box .content-final, .footer-content .fifth-box .content-final .content-logo {
   padding: 0 !important; }
 
 .resp_img {
@@ -712,6 +712,8 @@ a {
         padding-left: 10px;
         padding-right: 10px;
         width: 25%;
+        padding-left: 0;
+        padding-right: 0;
         height: 100%; }
         .footer-content .third-box .logotipos-sitios .content-logo .sitios {
           padding-left: 15px;
@@ -724,20 +726,16 @@ a {
             .footer-content .third-box .logotipos-sitios .content-logo .sitios {
               font-size: 7px;
               padding-left: 5px; } }
-        .footer-content .third-box .logotipos-sitios .content-logo .logo-group {
-          height: 100%; }
-          .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chicfit, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.soycrack, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chilerunning {
-            float: left;
-            direction: ltr;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 25%;
-            margin: 0 auto; }
-            @media screen and (max-width: 480px) {
-              .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chicfit, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.soycrack, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chilerunning {
-                width: 91.66667%; } }
-            .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chicfit svg, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.soycrack svg, .footer-content .third-box .logotipos-sitios .content-logo .logo-group.chilerunning svg {
-              height: auto; }
+        .footer-content .third-box .logotipos-sitios .content-logo a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .footer-content .third-box .logotipos-sitios .content-logo a .logo-group {
+            width: 70%;
+            min-height: 30%;
+            margin: 20px auto 0; }
+        .footer-content .third-box .logotipos-sitios .content-logo:last-child a .logo-group {
+          width: 30%; }
   .footer-content .fourth-box {
     color: #FFFFFF;
     height: 160px; }
@@ -778,7 +776,9 @@ a {
         padding-left: 10px;
         padding-right: 10px;
         width: 25%;
-        height: inherit; }
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%; }
         .footer-content .fourth-box .content-groupmd .content-logo a {
           display: block;
           width: 100%;
@@ -798,26 +798,13 @@ a {
             margin: 0 auto;
             display: block; }
         .footer-content .fourth-box .content-groupmd .content-logo .logo-group {
-          float: left;
-          direction: ltr;
-          padding-left: 10px;
-          padding-right: 10px;
-          width: 50%;
-          float: none;
-          height: 100%;
-          margin: 0 auto;
-          display: table-cell;
-          vertical-align: middle; }
+          width: 70%;
+          min-height: 30%;
+          margin: 20px auto 0; }
           .footer-content .fourth-box .content-groupmd .content-logo .logo-group #mediatrends-logo {
             fill: #343434; }
-          .footer-content .fourth-box .content-groupmd .content-logo .logo-group.montana {
-            float: left;
-            direction: ltr;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 66.66667%;
-            float: none;
-            display: block; }
+        .footer-content .fourth-box .content-groupmd .content-logo:last-child a .logo-group {
+          width: 30%; }
   .footer-content .fifth-box {
     border: 0; }
     .footer-content .fifth-box .content-final {
